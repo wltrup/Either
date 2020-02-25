@@ -1,8 +1,13 @@
 # Either
+![](https://img.shields.io/badge/platforms-iOS%2011%20%7C%20tvOS%2011%20%7C%20watchOS%205%20%7C%20macOS%2010.14-red)
+[![Xcode](https://img.shields.io/badge/Xcode-11-blueviolet.svg)](https://developer.apple.com/xcode)
+[![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/wltrup/either)
+![GitHub](https://img.shields.io/github/license/wltrup/either)
 
 ## What
 
-**Either** is a Swift Package Manager package for iOS 11.0 and above, tvOS 11.0 and above, watchOS 5.0 and above, macOS 10.14 and above, under Swift 5.0 and above,  implementing a simple `Either` type, with a few built-in and useful protocol conformances:
+**Either** is a Swift Package Manager package for iOS/tvOS (11.0 and above), watchOS (5.0 and above), and macOS (10.14 and above), under Swift 5.0 and above,  implementing a simple `Either` type, with a few built-in and useful properties and protocol conformances:
 ```swift
 public enum Either<LHS, RHS> {
     
