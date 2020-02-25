@@ -59,7 +59,11 @@ extension Either: Codable where LHS: Codable, RHS: Codable {
 }
 
 extension Either: Comparable where LHS: Comparable, RHS: Comparable {
-    
+
+    /// This comparison operator does what one would expect when its operands
+    /// have values of the same associated type. If the operands have values of
+    /// different associated types, then the left hand side type, `LHS`, is always
+    /// considered to be lower than the right hand side type, `RHS`.
     public static func < (a: Either, b: Either) -> Bool {
         switch (a, b) {
         case let (.lhs(lhs1), .lhs(lhs2)):
