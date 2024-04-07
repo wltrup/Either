@@ -8,6 +8,7 @@
 ## What
 
 **Either** is a Swift Package Manager package for iOS/tvOS (11.0 and above), watchOS (5.0 and above), and macOS (10.14 and above), under Swift 5.0 and above,  implementing a simple `Either` type, with a few built-in and useful properties and protocol conformances:
+
 ```swift
 public enum Either<LHS, RHS> {
     
@@ -33,10 +34,6 @@ extension Either: Comparable where LHS: Comparable, RHS: Comparable { /* ... */ 
 ## Installation
 
 **Either** is provided only as a Swift Package Manager package, because I'm moving away from CocoaPods and Carthage, and can be easily installed directly from Xcode.
-
-## Author
-
-Wagner Truppel, trupwl@gmail.com
 
 ## License
 
